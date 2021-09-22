@@ -1,0 +1,20 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+@media(min-width: 768px) {
+  .my-news-input {
+    width: 75%;
+  }
+}
+
+@media(max-width: 768px) {
+  .my-card {
+    padding-top: 1rem;
+  }
+  .my-container-card:last-child {
+    padding-bottom: 1rem;
+  }
+}

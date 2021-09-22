@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
   <title>Robo Camp</title>
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-md bg-danger navbar-light">
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-md bg-danger navbar-light py-3 fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand">Robo Camp</a>
 
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a href="#instr" class="nav-link">Instructions</a>
           </li>
@@ -29,7 +39,206 @@
       </div>
     </div>
   </nav>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <!-- Showcase -->
+
+  <section class="bg-danger text-light p-5 text-center">
+    <div class="container">
+      <div class="d-md-flex justify-content-around align-items-center">
+        <div>
+          <h1>Be a <span class="text-success">Robot</span></h1>
+          <p class="lead my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore! Nulla cumque autem quaerat vel
+            soluta magni dolor, alias ad animi facere at error eos.
+          </p>
+          <button class="btn btn-warning btn-lg lead">Begin Transformation!</button>
+        </div>
+        <img class="img-fluid w-25 d-none d-md-block" src="images/zaku-verde.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+
+  <section class="bg-warning text-dark p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0">Sign Up Here!</h3>
+
+        <div class="input-group my-news-input">
+          <input type="text" class="form-control" placeholder="Your serial number...">
+          <button class="btn btn-outline-secondary bg-dark text-light btn-lg" type="button">PUSH</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boxes -->
+
+  <section class="p-md-5 bg-dark">
+    <div class="container">
+      <div class="row text-center my-container-card">
+        <div class="col-md my-card">
+          <div class="card bg-success text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h3 class="card-title mb-3">
+                Assembler
+              </h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi possimus delectus vero, earum non.
+              </p>
+              <a href="#" class="btn btn-secondary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md my-card">
+          <div class="card bg-info text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-lightning"></i>
+              </div>
+              <h3 class="card-title mb-3">
+                Charging
+              </h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi possimus delectus vero, earum non.
+              </p>
+              <a href="#" class="btn btn-secondary">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md my-card">
+          <div class="card bg-success text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-joystick"></i>
+              </div>
+              <h3 class="card-title mb-3">
+                Controller
+              </h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi possimus delectus vero, earum non.
+              </p>
+              <a href="#" class="btn btn-secondary">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leard section -->
+
+  <section id="instr" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="images/johnny-automatic-robot.svg" class="img-fluid w-75 d-none d-md-block" alt="">
+        </div>
+        <div class="col-md p-5">
+          <h2>Prime directives</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi magnam incidunt cumque rerum explicabo?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque modi dolorum temporibus, delectus totam. Voluptatum expedita aspernatur dolore, atque dignissimos illo minus adipisci aperiam temporibus sunt doloremque quisquam eligendi.
+          </p>
+          <a href="#" class="btn btn-danger mt-3">
+            <i class="bi bi-caret-right"></i>
+            Read more
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructions" class="p-5 bg-secondary text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <h2>Target control</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi magnam incidunt cumque rerum explicabo?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque modi dolorum temporibus, delectus totam. Voluptatum expedita aspernatur dolore, atque dignissimos illo minus adipisci aperiam temporibus sunt doloremque quisquam eligendi.
+          </p>
+          <a href="#" class="btn btn-success mt-3">
+            <i class="bi bi-caret-right"></i>
+            Read more
+          </a>
+        </div>
+        <div class="col-md">
+          <img src="images/johnny_automatic_toy_robot.svg" class="img-fluid w-50 d-none d-md-block" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion -->
+
+  <section id="power" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">
+        Reactor Stuff Work
+      </h2>
+
+      <div class="accordion accordion-flush" id="power">
+
+        <!-- Item 1 -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#power-one">
+              Reactor online
+            </button>
+          </h2>
+          <div id="power-one" class="accordion-collapse collapse" data-bs-parent="#power">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, deserunt cumque. Odit alias illum voluptate minus doloremque quod aliquam hic veritatis. Dignissimos voluptate aperiam debitis excepturi temporibus cum? Ratione minus iure ullam consectetur. Animi dolore incidunt similique quibusdam beatae praesentium ipsa molestiae placeat hic, iure soluta, ea delectus illo voluptates.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#power-two">
+              Sensors online
+            </button>
+          </h2>
+          <div id="power-two" class="accordion-collapse collapse" data-bs-parent="#power">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ratione exercitationem optio aspernatur recusandae id quos. Minima beatae quod quaerat mollitia atque odit ullam aliquid, optio inventore ad hic ipsa reiciendis excepturi harum tempora, quis dicta veritatis nihil tenetur voluptas animi iste explicabo. Hic beatae explicabo laborum nulla, sed inventore?
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#power-three">
+              All systems nominal
+            </button>
+          </h2>
+          <div id="power-three" class="accordion-collapse collapse" data-bs-parent="#power">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sed, voluptatibus minima nostrum dolor ullam reprehenderit cum voluptates quisquam tempora facere asperiores ducimus rem! Aperiam architecto inventore ea harum eaque ipsum natus eveniet magni excepturi vitae. Ullam amet non quas assumenda repudiandae provident tempore quo veniam! Laboriosam earum esse voluptatum.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
