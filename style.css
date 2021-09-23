@@ -4,6 +4,10 @@ body::before {
   height: 60px;
 }
 
+.my-map {
+  font-size: 100px;
+}
+
 @media(min-width: 768px) {
   .my-news-input {
     width: 75%;
